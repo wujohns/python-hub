@@ -9,7 +9,9 @@
 参考 [pt-demo/1.1.multiprocessing.py](/pt-demo/1.1.multiprocessing.py)  
 
 ## cpu 密集型的异步多任务
-参考 [pt-demo/1.2.multiprocessing-async.py](/pt-demo/1.2.multiprocessing-async.py)  
+这里主要提供了两种异步策略:  
+1. 使用将其接入事件轮询，该方式可以较好的配合当前采用协程作为底座的框架，参考 [pt-demo/1.2.multiprocessing-async.py](/pt-demo/1.2.multiprocessing-async.py)  
+1. 使用 submit 模式，该方式为传统方式，参考 [pt-demo/]()
 
 ## 注意事项
 1. 在 win 下多进程的调用需要放在 __main__ 下  

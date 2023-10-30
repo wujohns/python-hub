@@ -1,8 +1,8 @@
 import asyncio
 import concurrent.futures
 
-# 创建全局进程池
-executor = concurrent.futures.ProcessPoolExecutor(max_workers=4)
+# 创建全局线程池
+executor = concurrent.futures.ThreadPoolExecutor(max_workers=40)
 
 # 处理方法
 def run(index):
