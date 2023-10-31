@@ -14,6 +14,8 @@ loop = asyncio.new_event_loop()
 loop.create_task(run(1))
 loop.create_task(check())
 loop.create_task(run(2))
+
+# 这种方式是否合适有待商榷
 loop.create_task(asyncio_importmm.init())
 
 loop.run_forever()

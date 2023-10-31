@@ -8,3 +8,6 @@ python常见问题或疑难杂症汇总，主要包含以下内容:
 
 ------ 需要单独确认
 1. 需要确认共享变量的处理方式  
+
+1. db.session -- do_painting 测试  
+1. requests 测试

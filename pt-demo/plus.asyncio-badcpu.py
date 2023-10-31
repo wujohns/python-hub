@@ -1,11 +1,13 @@
 # 不要直接用事件轮询处理 cpu 密集型任务
 # 这里展示的是一个经典错误使用场景
 import asyncio
+import time
 
 async def run(index):
   # 3000万次轮询
-  for _ in range((10**7)*3):
-    a = 'aa'
+  # for _ in range((10**7)*3):
+  #   a = 'aa'
+  time.sleep(2)
   print(f'index: { index }')
 
 # cpu 密集型会导致整个 event loop 阻塞
